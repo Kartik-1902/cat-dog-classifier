@@ -41,6 +41,8 @@ In .env-local
 ```bash
 VITE_API_BASE_URL=http://<your-backend-ip>:8000
 ```
+---
+
 🔗 Backend Setup
 Due to resource constraints (such as limited RAM on free-tier hosting platforms like Render), the backend is not deployed publicly.
 
