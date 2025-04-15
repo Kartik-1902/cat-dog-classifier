@@ -25,12 +25,6 @@ This project is a React-based web application that allows users to upload an ima
 
 ---
 
-## 📸 Demo Preview
-
-> _Include a screenshot or a link to a hosted frontend if available_
-
----
-
 ## 📦 Installation
 
 ### 1. Clone this Repository
