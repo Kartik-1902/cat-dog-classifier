@@ -1,6 +1,6 @@
 import { useDropzone } from 'react-dropzone';
 
-export default function Dropbox({ onImageUpload, image, imageRef }) {
+export default function Dropbox({ onImageUpload, image }) {
   const { getRootProps, getInputProps } = useDropzone({
     accept: {
       'image/*': ['.jpeg', '.jpg', '.png']
@@ -18,16 +18,17 @@ export default function Dropbox({ onImageUpload, image, imageRef }) {
 
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-      <div {...getRootProps()} className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-blue-500 transition-colors">
+      <div 
+        {...getRootProps()} 
+        className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-blue-500 transition-colors"
+      >
         <input {...getInputProps()} />
         {image ? (
           <div className="flex flex-col items-center">
             <img 
-              ref={imageRef}
               src={image} 
               alt="Uploaded preview" 
               className="max-h-64 mb-4 rounded-md"
-              crossOrigin="anonymous"
             />
             <p className="text-gray-600">Drop another image here, or click to select</p>
           </div>
